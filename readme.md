@@ -19,3 +19,6 @@ If you're not in the mood to read, [Laracasts](https://laracasts.com) contains o
 ## Laravel Sponsors
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+##Install mysql
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04
