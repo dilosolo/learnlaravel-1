@@ -7,6 +7,7 @@ Inisiasi DILo Solo dan PHP Indonesia dalam rangka untuk membantu teman-teman yan
 - Buka folder learnlaravel-1 di terminal
 - Ketik "composer install"
 - Kemudian setting .env sesuaikan databasenya.
+- ketik di terminal "php artisan key:generate", kemudian :
 - ketik di terminal "php artisan migrate:refresh"
 
 ## Learning Laravel
