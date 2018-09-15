@@ -13,6 +13,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h2 class="card-title">Data Kelas</h2>
+                        <h3>{{ $dataKelas->count() }}</h3>
 
                         <!-- list data kelas -->
                         <div>
@@ -36,7 +37,8 @@
                                     <td>{{ $kelas->id }}</td>
                                     <td>{{ $kelas->nama }}</td>
                                     <td>{{ $kelas->created_at }}</td>
-                                    <td>Edit | Hapus</td>
+                                    <td>
+                                      <a href="{{ url('kelas/edit/'.$kelas->id) }}">Edit</a> | Hapus</td>
                                 </tr>
                                 @endforeach
 

@@ -16,7 +16,7 @@ class KelasController extends Controller
     {
         // ambil data kelas dari database
         // $dataKelas = Kelas::all();
-        $dataKelas = Kelas::orderBy('id', 'desc')->get();
+        $dataKelas = Kelas::orderby('id', 'desc')->get();
 
         $dataTemplate = [
             'dataKelas' => $dataKelas
@@ -76,7 +76,8 @@ class KelasController extends Controller
      */
     public function edit($id)
     {
-        //
+       $data['kelas'] = Kelas::findOrFail($id);
+       return view('kelas.edit',$data);
     }
 
     /**
