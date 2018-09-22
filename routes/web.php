@@ -23,4 +23,8 @@ Route::view('testing-extend','content');
 Route::get('kelas','KelasController@index'); //tapi pakai seperti ini
 Route::get('kelas/create','KelasController@create');
 Route::post('kelas/store', 'KelasController@store');
+
 Route::get('kelas/edit/{id}', 'KelasController@edit');
+Route::put('kelas/update/{id}', 'KelasController@update');
+
+Route::delete('kelas/{id}', 'KelasController@destroy');

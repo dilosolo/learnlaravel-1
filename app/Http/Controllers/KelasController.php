@@ -89,7 +89,18 @@ class KelasController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // ambil dari db
+        $kelas = Kelas::findOrFail($id);
+        // set kolom
+        $kelas->nama = $request->input('kelas');
+        // simpan ke db
+        $kelas->save();
+
+        $request
+            ->session()
+            ->flash('pesan', 'Data berhasil diubbah');
+
+        return redirect('/kelas');
     }
 
     /**
@@ -98,8 +109,14 @@ class KelasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
-        //
+        Kelas::destroy($id);
+
+        $request
+            ->session()
+            ->flash('pesan', 'Data berhasil dihapus');
+
+        return redirect('/kelas');
     }
 }

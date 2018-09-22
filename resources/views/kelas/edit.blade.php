@@ -4,11 +4,13 @@
     <!-- Page Content -->
     <div class="container">
 
-      <h1>Tambah data kelas</h1>
+      <h1>Edit data kelas</h1>
 
       <div class="row">
           <div class="col-md-6">
-              <form method="post" action="/kelas/update">
+              <form method="post" action="/kelas/update/{{ $kelas->id }}">
+
+                  {{ method_field('PUT') }}
 
                   {{ csrf_field() }}
 
