@@ -17,7 +17,7 @@
               <a class="nav-link" href="{{ url('kelas') }}">Kelas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Siswa</a>
+              <a class="nav-link" href="{{ url('siswa') }}">Siswa</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Tentang</a>
